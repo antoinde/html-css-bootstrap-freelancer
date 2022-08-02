@@ -19,90 +19,118 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
 
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- link to CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Bootstrap responsive layout</title>
   </head>
   <body>
+    <!-- header -->
     <header class="ac-bg-dark py-1">
-      <div class="container-lg">
-        <h1>Qualche titolo</h1>
-      </div>
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand text-white text-uppercase" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#portfolio-container">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#form">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
+      <!-- profile section -->
       <section class="ac-bg-green py-3">
         <div class="container-lg text-center">
           <div class="row">
             <div class="col-12">
               <img
-                src="https://picsum.photos/200/200"
-                class="img-fluid"
+                src="img/avatar.svg"
+                class="img-fluid ai-avatar"
                 alt="image example"
               />
             </div>
             <div class="col-12">
-              <h2>Start Bootstrap</h2>
+              <h2 class="text-uppercase pt-3">Start Bootstrap</h2>
             </div>
             <div class="col-12">
-              <i class="bi bi-star-fill"></i>
+              <div class="ai-star-white">
+                <i class="bi bi-star-fill align-middle fs-3"></i>
+              </div>
             </div>
-            <p class="col-12">testo</p>
+            <p class="col-12 text-uppercase">Graphic artist - web designer - illustrator</p>
           </div>
         </div>
       </section>
       <section class="py-4">
         <div class="container-lg text-center">
-          <div class="row">
+          <div class="row mb-2">
             <div class="col-12">
-              <h2>Portfolio</h2>
+              <h2 class="text-uppercase">Portfolio</h2>
             </div>
-            <div class="col-12">
-              <i class="bi bi-star-fill"></i>
+            <div class="ai-star-black">
+              <i class="bi bi-star-fill align-middle fs-3"></i>
             </div>
           </div>
           <!-- portfolio container -->
           <div id="portfolio-container">
-            <div class="row gy-2">
-              <div class="col-12 col-lg-6">
-                <img src="https://picsum.photos/200/200" alt="my work" />
+            <div class="row gy-2 rg-5">
+              <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img class="img-fluid rounded" src="/img/cabin.png" alt="my work" />
               </div>
-              <div class="col-12 col-lg-6">
-                <img src="https://picsum.photos/200/200" alt="my work" />
+              <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img class="img-fluid rounded" src="/img/cake.png" alt="my work" />
               </div>
-              <div class="col-12 col-lg-6">
-                <img src="https://picsum.photos/200/200" alt="my work" />
+              <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img class="img-fluid rounded" src="/img/circus.png" alt="my work" />
               </div>
-              <div class="col-12 col-lg-6">
-                <img src="https://picsum.photos/200/200" alt="my work" />
+              <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img class="img-fluid rounded" src="/img/game.png" alt="my work" />
               </div>
-              <div class="col-12 col-lg-6">
-                <img src="https://picsum.photos/200/200" alt="my work" />
+              <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img class="img-fluid rounded" src="/img/safe.png" alt="my work" />
               </div>
-              <div class="col-12 col-lg-6">
-                <img src="https://picsum.photos/200/200" alt="my work" />
+              <div class="col-12 col-sm-6 col-lg-4 mb-3">
+                <img class="img-fluid rounded" src="/img/submarine.png" alt="my work" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="ac-bg-green">
+      <!-- about -->
+      <section id="about" class="ac-bg-green py-4">
         <div class="container-sm">
           <div class="row text-center">
             <div class="col-12">
-              <h2>About</h2>
+              <h2 class="text-uppercase">About</h2>
             </div>
             <div class="col-12">
-              <i class="bi bi-star-fill"></i>
+              <div class="ai-star-white">
+                <i class="bi bi-star-fill align-middle fs-3"></i>
+              </div>
             </div>
           </div>
-          <div class="row px-5">
-            <p class="col-12 col-lg-6">
+          <div class="row px-5 gy-3">
+            <p class="col-12 col-sm-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               reiciendis autem velit non harum culpa eum quibusdam vero a est
               nobis consectetur id assumenda, facere delectus natus nostrum
               perferendis? Voluptates.
             </p>
-            <p class="col-12 col-lg-6">
+            <p class="col-12 col-sm-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               reiciendis autem velit non harum culpa eum quibusdam vero a est
               nobis consectetur id assumenda, facere delectus natus nostrum
@@ -110,19 +138,23 @@
             </p>
           </div>
           <div class="col-12 text-center">
-            <button type="button" class="btn btn-outline-success">Download</button>
+            <button type="button" class="btn btn-outline-light">
+              <span><i class="bi bi-file-arrow-down-fill"></i></span>
+              Download</button>
           </div>
         </div>
       </section>
       <!-- contact me -->
-      <section>
+      <section id="form" class="py-4">
         <div class="container-sm">
           <div class="row ">
             <div class="col-12 text-center">
-              <h2> CONTACT ME </h2>
+              <h2 class="text-uppercase"> CONTACT ME </h2>
             </div>
             <div class="col-12 text-center">
-              <i class="bi bi-star-fill"></i>
+              <div class="ai-star-black">
+                <i class="bi bi-star-fill align-middle fs-3"></i>
+              </div>
             </div>
             <div class="col-10 .justify-content-center">
               <span class="border-bottom"> Name </span>
@@ -145,39 +177,39 @@
     <!-- footer -->
     <footer class="text-center">
 
-      <div class="footer-contacts ai-bg-dark">
+      <div class="footer-contacts ai-bg-dark py-4">
         <div class="container-lg">
-          <div class="row justify-content-center">
-            <div class="col-12">
+          <div class="row justify-content-center gy-4">
+            <div class="col-12 col-sm-4">
               <h4 class="text-uppercase">Location</h4>
-              <p>Via da qualche parte, 22</p>
+              <p> 91021 Mazara Del Vallo, n°1</p>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-sm-4">
               <h4 class="text-uppercase">Around the web</h4>
               <div class="social-icons fs-1">
 
                 <i class="bi bi-facebook"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
 
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-sm-4">
               <h4 class="text-uppercase">About Freelancer</h4>
               <p>Freelance is free to use, open source Bootstrap theme created by
-                <a href="#">Start Bootstrap</a>
+                <a class="text-decoration-none" href="#">Start Bootstrap</a>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="copyright ac-bg-dark">
+      <div class="copyright ac-bg-dark py-4">
         <div class="container-fluid text-center">
 
           <div class="row">
             <div class="col-12">
-              &copy; boolean lessons 2022
+              Copyright &copy; by Antoinde23
             </div>
           </div>
 

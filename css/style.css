@@ -19,3 +19,30 @@
 }
 /* content */
 
+.ai-avatar{
+  max-width: 250px;
+}
+.ai-star-white::before,
+.ai-star-white::after{
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 15%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.ai-star-black::before,
+.ai-star-black::after{
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 15%;
+  border: 2px solid #212529;
+  background-color: #212529;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
