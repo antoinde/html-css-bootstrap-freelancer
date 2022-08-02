@@ -26,13 +26,20 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Bootstrap responsive layout</title>
   </head>
+
   <body>
     <!-- header -->
     <header class="ac-bg-dark py-1">
       <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container-lg">
           <a class="navbar-brand text-white text-uppercase" href="#">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
@@ -147,6 +154,7 @@
       <!-- contact me -->
       <section id="form" class="py-4">
         <div class="container-sm">
+          
           <div class="row ">
             <div class="col-12 text-center">
               <h2 class="text-uppercase"> CONTACT ME </h2>
@@ -156,19 +164,64 @@
                 <i class="bi bi-star-fill align-middle fs-3"></i>
               </div>
             </div>
-            <div class="col-10 .justify-content-center">
-              <span class="border-bottom"> Name </span>
-            </div>
-            <div class="col-10 .justify-content-center">
-              <span class="border-bottom"> Email Address </span>
-            </div>
-            <div class="col-10 .justify-content-center">
-              <span class="border-bottom"> Phone Number </span>
-            </div>
-            <div class="col-10 .justify-content-center">
-              <span class="border-bottom"> Message </span>
-            </div>
           </div>
+
+          <div class="row">
+            <div class="col-12 ">
+              <!-- form -->
+              <form>
+                <div class="mb-3">
+                  <label 
+                    for="name-input" 
+                    class="form-label">Name
+                  </label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    id="name-input"
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label 
+                    for="input-email" 
+                    class="form-label">Email 
+                  </label>
+                  <input 
+                    required
+                    type="email" 
+                    class="form-control" 
+                    id="input-email" 
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label for="input-number" 
+                    class="form-label">Phone Number
+                  </label>
+                  <input 
+                    required
+                    type="number" 
+                    minlength="9" 
+                    class="form-control" 
+                    id="input-number"
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label for="input-number" 
+                    class="form-label">Message
+                  </label> 
+                  <br>
+                  <textarea placeholder="Ask me a question" name="" id="input-message" cols="60" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
+              </form>
+            </div>
+    
+          </div>
+
         </div>
 
 
