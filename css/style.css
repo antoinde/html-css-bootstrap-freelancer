@@ -49,3 +49,7 @@
 #form .container-sm{
   max-width: 500px;
 }
+
+.ai-text-area-debug{
+  width: 100%;
+}
