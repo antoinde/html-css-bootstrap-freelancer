@@ -46,3 +46,6 @@
   vertical-align: middle;
 }
 
+#form .container-sm{
+  max-width: 500px;
+}
